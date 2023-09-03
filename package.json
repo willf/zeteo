@@ -1,0 +1,27 @@
+{
+  "name": "zeteo",
+  "version": "1.0.0",
+  "description": "A CLI for Elasticsearch.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "pkg ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bin": {
+    "zeteo": "./build/cli.js"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "targets": [
+      "node14-macos-x64"
+    ],
+    "output": "zeteo",
+    "outputPath": "./build"
+  }
+}
